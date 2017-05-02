@@ -77,63 +77,10 @@ type Sound struct {
 }
 
 // Array of all the sounds we have
-var AIRHORN *SoundCollection = &SoundCollection{
-	Prefix: "airhorn",
-	Commands: []string{
-		"!airhorn",
-	},
-	Sounds: []*Sound{
-		createSound("default", 1000, 250),
-		createSound("reverb", 800, 250),
-		createSound("spam", 800, 0),
-		createSound("tripletap", 800, 250),
-		createSound("fourtap", 800, 250),
-		createSound("distant", 500, 250),
-		createSound("echo", 500, 250),
-		createSound("clownfull", 250, 250),
-		createSound("clownshort", 250, 250),
-		createSound("clownspam", 250, 0),
-		createSound("highfartlong", 200, 250),
-		createSound("highfartshort", 200, 250),
-		createSound("midshort", 100, 250),
-		createSound("truck", 10, 250),
-	},
-}
-
-var KHALED *SoundCollection = &SoundCollection{
-	Prefix:    "another",
-	ChainWith: AIRHORN,
-	Commands: []string{
-		"!anotha",
-		"!anothaone",
-	},
-	Sounds: []*Sound{
-		createSound("one", 1, 250),
-		createSound("one_classic", 1, 250),
-		createSound("one_echo", 1, 250),
-	},
-}
-
-var CENA *SoundCollection = &SoundCollection{
-	Prefix: "jc",
-	Commands: []string{
-		"!johncena",
-		"!cena",
-	},
-	Sounds: []*Sound{
-		createSound("airhorn", 1, 250),
-		createSound("echo", 1, 250),
-		createSound("full", 1, 250),
-		createSound("jc", 1, 250),
-		createSound("nameis", 1, 250),
-		createSound("spam", 1, 250),
-	},
-}
-
 var PURGE *SoundCollection = &SoundCollection{
 	Prefix: "purge",
 	Commands: []string{
-		"!purge",
+		"^purge",
 	},
 	Sounds: []*Sound{
 		createSound("sunder", 1, 250),
@@ -165,76 +112,103 @@ var PURGE *SoundCollection = &SoundCollection{
 	},
 }
 
-var ETHAN *SoundCollection = &SoundCollection{
-	Prefix: "ethan",
+var DOTA *SoundCollection = &SoundCollection{
+	Prefix: "dota",
 	Commands: []string{
-		"!ethan",
-		"!eb",
-		"!ethanbradberry",
-		"!h3h3",
+		"^dota",
 	},
 	Sounds: []*Sound{
-		createSound("areyou_classic", 100, 250),
-		createSound("areyou_condensed", 100, 250),
-		createSound("areyou_crazy", 100, 250),
-		createSound("areyou_ethan", 100, 250),
-		createSound("classic", 100, 250),
-		createSound("echo", 100, 250),
-		createSound("high", 100, 250),
-		createSound("slowandlow", 100, 250),
-		createSound("cuts", 30, 250),
-		createSound("beat", 30, 250),
-		createSound("sodiepop", 1, 250),
+		createSound("waow", 1, 400),
+	        createSound("disaster", 1, 400),
+	        createSound("sadtimes", 1, 400),
+	        createSound("history", 1, 400),
+		createSound("topplay", 1, 400),
+		createSound("hook", 1, 400),
+		createSound("peenoise", 1, 400),
 	},
 }
 
-var COW *SoundCollection = &SoundCollection{
-	Prefix: "cow",
+var EE *SoundCollection = &SoundCollection{
+	Prefix: "ee",
 	Commands: []string{
-		"!stan",
-		"!stanislav",
+		"^ee",
 	},
 	Sounds: []*Sound{
-		createSound("herd", 10, 250),
-		createSound("moo", 10, 250),
-		createSound("x3", 1, 250),
+		createSound("go", 1, 400),
+		createSound("aegischeese", 1, 400),	
+		createSound("fight", 1, 400),
+		createSound("back", 1, 400),
+		createSound("rosh", 1, 400),
+		createSound("no", 1, 400),
+		createSound("whatshappening", 1, 400),
+		createSound("wtf", 1, 400),
+		createSound("wtf2", 1, 400),
 	},
 }
 
-var BIRTHDAY *SoundCollection = &SoundCollection{
-	Prefix: "birthday",
+var RTZ *SoundCollection = &SoundCollection{
+	Prefix: "rtz",
 	Commands: []string{
-		"!birthday",
-		"!bday",
+		"^rtz",
 	},
 	Sounds: []*Sound{
-		createSound("horn", 50, 250),
-		createSound("horn3", 30, 250),
-		createSound("sadhorn", 25, 250),
-		createSound("weakhorn", 25, 250),
+		createSound("perfect", 1, 400),
+		createSound("tryhard", 1, 400),
+		createSound("clown", 1 , 400),
+		createSound("getmeout", 1, 400),
 	},
 }
 
-var WOW *SoundCollection = &SoundCollection{
-	Prefix: "wow",
+var DONGER *SoundCollection = &SoundCollection{
+	Prefix: "donger",
 	Commands: []string{
-		"!wowthatscool",
-		"!wtc",
+		"^donger",
 	},
 	Sounds: []*Sound{
-		createSound("thatscool", 50, 250),
+		createSound("skadoosh", 1, 400),
+		createSound("skadoosh2", 1, 400),
+		createSound("failjuke", 1, 400),
+		createSound("donger", 1, 400),
+		createSound("ronnie", 1, 400),
+		createSound("ronnie2", 1, 400),
+		createSound("welost", 1, 400),
+		createSound("blbl", 1, 400),
+		createSound("rat", 1, 400),
+		createSound("blbl2", 1, 400),
+		createSound("surprise", 1, 400),
+		createSound("help", 1, 400),
+		createSound("come", 1, 400),
+		createSound("power", 1, 400),
+		createSound("panic", 1, 400),
+	},
+}
+
+var SINGSING *SoundCollection = &SoundCollection{
+	Prefix: "sing",
+	Commands: []string{
+		"^sing",
+	},
+	Sounds: []*Sound{
+		createSound("opadendi", 1, 400),
+		createSound("ezrape", 1, 400),
+		createSound("gotime", 1, 400),
+		createSound("rapetime", 1, 400),
+		createSound("shaman", 1, 400),
+		createSound("chill", 1, 400),
+		createSound("song", 1, 400),
+		createSound("loveit", 1, 400),
+		createSound("pussy", 1, 400),
+		createSound("killers", 1, 400),
 	},
 }
 
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
-	AIRHORN,
-	KHALED,
-	CENA,
-	ETHAN,
-	COW,
-	BIRTHDAY,
-	WOW,
 	PURGE,
+	DOTA,
+	EE,
+	DONGER,
+	RTZ,
+	SINGSING,
 }
 
 // Create a Sound struct
@@ -493,7 +467,7 @@ func playSound(play *Play, vc *discordgo.VoiceConnection) (err error) {
 
 func onReady(s *discordgo.Session, event *discordgo.Ready) {
 	log.Info("Recieved READY payload")
-	s.UpdateStatus(0, "Purge RoastBot")
+	s.UpdateStatus(0, "with YOUR MUM")
 }
 
 func onGuildCreate(s *discordgo.Session, event *discordgo.GuildCreate) {
@@ -503,7 +477,7 @@ func onGuildCreate(s *discordgo.Session, event *discordgo.GuildCreate) {
 
 	for _, channel := range event.Guild.Channels {
 		if channel.ID == event.Guild.ID {
-			s.ChannelMessageSend(channel.ID, "**AIRHORN BOT READY FOR HORNING. TYPE `!AIRHORN` WHILE IN A VOICE CHANNEL TO ACTIVATE**")
+			s.ChannelMessageSend(channel.ID, "**MEME BOARD READY FOR MEMEING. TYPE `^help` FOR COMMANDS. ONLY WORKS WHILE IN A VOICE CHANNEL**")
 			return
 		}
 	}
@@ -523,7 +497,7 @@ func calculateAirhornsPerSecond(cid string) {
 	time.Sleep(time.Second * 10)
 	latest, _ := strconv.Atoi(rcli.Get("airhorn:a:total").Val())
 
-	discord.ChannelMessageSend(cid, fmt.Sprintf("Current APS: %v", (float64(latest-current))/10.0))
+	discord.ChannelMessageSend(cid, fmt.Sprintf("Current MPS: %v", (float64(latest-current))/10.0))
 }
 
 func displayBotStats(cid string) {
@@ -577,7 +551,7 @@ func displayUserStats(cid, uid string) {
 	}
 
 	totalAirhorns := utilSumRedisKeys(keys)
-	discord.ChannelMessageSend(cid, fmt.Sprintf("Total Airhorns: %v", totalAirhorns))
+	discord.ChannelMessageSend(cid, fmt.Sprintf("Total Memes: %v", totalAirhorns))
 }
 
 func displayServerStats(cid, sid string) {
@@ -587,7 +561,7 @@ func displayServerStats(cid, sid string) {
 	}
 
 	totalAirhorns := utilSumRedisKeys(keys)
-	discord.ChannelMessageSend(cid, fmt.Sprintf("Total Airhorns: %v", totalAirhorns))
+	discord.ChannelMessageSend(cid, fmt.Sprintf("Total Memes: %v", totalAirhorns))
 }
 
 func utilGetMentioned(s *discordgo.Session, m *discordgo.MessageCreate) *discordgo.User {
@@ -597,28 +571,6 @@ func utilGetMentioned(s *discordgo.Session, m *discordgo.MessageCreate) *discord
 		}
 	}
 	return nil
-}
-
-func airhornBomb(cid string, guild *discordgo.Guild, user *discordgo.User, cs string) {
-	count, _ := strconv.Atoi(cs)
-	discord.ChannelMessageSend(cid, ":ok_hand:"+strings.Repeat(":trumpet:", count))
-
-	// Cap it at something
-	if count > 100 {
-		return
-	}
-
-	play := createPlay(user, guild, AIRHORN, nil)
-	vc, err := discord.ChannelVoiceJoin(play.GuildID, play.ChannelID, true, true)
-	if err != nil {
-		return
-	}
-
-	for i := 0; i < count; i++ {
-		AIRHORN.Random().Play(vc)
-	}
-
-	vc.Disconnect()
 }
 
 // Handles bot operator messages, should be refactored (lmao)
@@ -633,22 +585,20 @@ func handleBotControlMessages(s *discordgo.Session, m *discordgo.MessageCreate, 
 		} else {
 			displayServerStats(m.ChannelID, g.ID)
 		}
-	} else if scontains(parts[1], "bomb") && len(parts) >= 4 {
-		airhornBomb(m.ChannelID, g, utilGetMentioned(s, m), parts[3])
-	} else if scontains(parts[1], "aps") {
+	} else if scontains(parts[1], "mps") {
 		s.ChannelMessageSend(m.ChannelID, ":ok_hand: give me a sec m8")
 		go calculateAirhornsPerSecond(m.ChannelID)
 	}
 }
 
 func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
-	if len(m.Content) <= 0 || (m.Content[0] != '!' && len(m.Mentions) < 1) {
+	if len(m.Content) <= 0 || (m.Content[0] != '^' && len(m.Mentions) < 1) {
 		return
 	}
 
 	msg := strings.Replace(m.ContentWithMentionsReplaced(), s.State.Ready.User.Username, "username", 1)
 	parts := strings.Split(strings.ToLower(msg), " ")
-
+	log.Info(m.ChannelID)
 	channel, _ := discord.State.Channel(m.ChannelID)
 	if channel == nil {
 		log.WithFields(log.Fields{
@@ -681,6 +631,28 @@ func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		if mentioned {
 			handleBotControlMessages(s, m, parts, guild)
 		}
+		return
+	}
+
+	if parts[0] == "^help" {
+		message := ""
+		if len(parts) == 1{
+			message += "**MEME COMMANDS - USE ``^help COMMAND`` FOR SPECIFIC SOUNDS**```"
+		}	
+		for _, coll := range COLLECTIONS{
+			if len(parts) > 1{
+				if scontains("^" + parts[1], coll.Commands...){
+					for _, sound:= range coll.Sounds{
+						message += "\n" + coll.Commands[0] + " " + sound.Name
+					}
+					s.ChannelMessageSend(m.ChannelID, "```" + message + "```")
+					return
+				}
+			}else {
+				message += "\n" + "^" + coll.Prefix
+			}
+		}
+		s.ChannelMessageSend(m.ChannelID,  message + "```")
 		return
 	}
 
@@ -774,7 +746,7 @@ func main() {
 	}
 
 	// We're running!
-	log.Info("AIRHORNBOT is ready to horn it up.")
+	log.Info("Soundboard ready")
 
 	// Wait for a signal to quit
 	c := make(chan os.Signal, 1)
